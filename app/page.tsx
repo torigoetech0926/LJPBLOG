@@ -2,7 +2,6 @@
 import React, { Suspense } from "react";
 import { getSortedArticlesData } from "./posts";
 import styles from "./_css/mainPage.module.css";
-import CategoryTabs from "./_parts/CategoryTabs";
 import Sidebar from "./_parts/Sidebar";
 import PaginatedArticleList from "./_parts/PaginatedArticleList";
 
@@ -12,8 +11,6 @@ export default async function ArticlesPage() {
   return (
     <main className={styles.mainContainer}>
       <section className={styles.articlesSection}>
-        {/* スマホ対応カテゴリー横スクロールタブ */}
-        <CategoryTabs current="すべて" />
 
         <h1 className={styles.title}>記事一覧</h1>
 
