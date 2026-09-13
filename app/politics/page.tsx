@@ -1,10 +1,10 @@
-// app/page.tsx
+// app/politics/page.tsx
 import React from "react";
 import Link from "next/link";
-import { getSortedArticlesData } from "./posts";
-import styles from "./_css/mainPage.module.css";
-import ArticleImage from "./_parts/ArticleImage";
-import Sidebar from "./_parts/Sidebar";
+import { getSortedArticlesData } from "@/app/_parts/posts";
+import styles from "../_css/mainPage.module.css";
+import ArticleImage from "../_parts/ArticleImage";
+import Sidebar from "../_parts/Sidebar";
 
 // 1ページあたりの表示件数を設定
 const ITEMS_PER_PAGE = 18;
@@ -14,29 +14,32 @@ interface PageProps {
 }
 
 export default async function ArticlesPage({ searchParams }: PageProps) {
-  // Next.js 15以降の非同期 searchParams に対応
   const resolvedSearchParams = await searchParams;
   const currentPage = Number(resolvedSearchParams?.page) || 1;
 
-  const articles = await getSortedArticlesData();
-  const totalArticles = articles.length;
-  
-  // 総ページ数の計算
+  // 全記事を取得後、「政治」タグを含む記事のみ抽出
+  const allArticles = await getSortedArticlesData();
+  const techArticles = allArticles.filter((article) =>
+    article.tags?.includes("政治")
+  );
+
+  const totalArticles = techArticles.length;
   const totalPages = Math.ceil(totalArticles / ITEMS_PER_PAGE);
 
-  // 現在のページに表示する記事を抽出
   const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
-  const paginatedArticles = articles.slice(startIndex, startIndex + ITEMS_PER_PAGE);
+  const paginatedArticles = techArticles.slice(
+    startIndex,
+    startIndex + ITEMS_PER_PAGE
+  );
 
   return (
     <main className={styles.mainContainer}>
       <section className={styles.articlesSection}>
-        {/* スマホ対応カテゴリー横スクロールタブ */}
 
-        <h1 className={styles.title}>記事一覧</h1>
+        <h1 className={styles.title}>政治 記事一覧</h1>
 
         {paginatedArticles.length === 0 ? (
-          <p className={styles.noArticles}>記事が見つかりませんでした。</p>
+          <p className={styles.noArticles}>政治に関する記事が見つかりませんでした。</p>
         ) : (
           <>
             <ul className={styles.articleList}>
@@ -71,35 +74,34 @@ export default async function ArticlesPage({ searchParams }: PageProps) {
             {/* ページネーション UI */}
             {totalPages > 1 && (
               <nav className={styles.pagination} aria-label="ページ送り">
-                {/* 前へボタン */}
                 {currentPage > 1 && (
                   <Link
-                    href={`/?page=${currentPage - 1}`}
+                    href={`/politics?page=${currentPage - 1}`}
                     className={styles.paginationLink}
                   >
                     &laquo; 前へ
                   </Link>
                 )}
 
-                {/* ページ番号一覧 */}
                 <div className={styles.pageNumbers}>
-                  {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
-                    <Link
-                      key={page}
-                      href={`/?page=${page}`}
-                      className={`${styles.pageNumber} ${
-                        page === currentPage ? styles.activePage : ""
-                      }`}
-                    >
-                      {page}
-                    </Link>
-                  ))}
+                  {Array.from({ length: totalPages }, (_, i) => i + 1).map(
+                    (page) => (
+                      <Link
+                        key={page}
+                        href={`/politics?page=${page}`}
+                        className={`${styles.pageNumber} ${
+                          page === currentPage ? styles.activePage : ""
+                        }`}
+                      >
+                        {page}
+                      </Link>
+                    )
+                  )}
                 </div>
 
-                {/* 次へボタン */}
                 {currentPage < totalPages && (
                   <Link
-                    href={`/?page=${currentPage + 1}`}
+                    href={`/politics?page=${currentPage + 1}`}
                     className={styles.paginationLink}
                   >
                     次へ &raquo;
@@ -111,8 +113,8 @@ export default async function ArticlesPage({ searchParams }: PageProps) {
         )}
       </section>
 
-      {/* サイドバー（PC時は右側、スマホ時は記事下部に表示） */}
-      <Sidebar />
+      {/* サイドバー */}
+      <Sidebar currentCategory="政治" />
     </main>
   );
 }

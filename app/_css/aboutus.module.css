@@ -1,0 +1,154 @@
+.container {
+  width: 100%;
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 24px 16px 60px;
+  color: #242424;
+  line-height: 1.8;
+  word-break: break-word;
+}
+
+@media (min-width: 769px) {
+  .container {
+    padding: 40px 24px 80px;
+  }
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 24px 16px;
+  border: 1px solid #f0f0f0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+@media (min-width: 769px) {
+  .card {
+    padding: 36px 32px;
+  }
+}
+
+/* タイトルヘッダー */
+.header {
+  margin-bottom: 24px;
+  border-bottom: 1px solid #f0f0f0;
+  padding-bottom: 16px;
+}
+
+@media (min-width: 769px) {
+  .header {
+    margin-bottom: 32px;
+    padding-bottom: 24px;
+  }
+}
+
+.mainTitle {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #1a1a1a;
+  margin: 0 0 8px 0;
+  line-height: 1.35;
+}
+
+@media (min-width: 769px) {
+  .mainTitle {
+    font-size: 1.85rem;
+  }
+}
+
+.subTitle {
+  font-size: 0.85rem;
+  color: #6b7280;
+  font-weight: 500;
+  margin: 0;
+}
+
+/* Markdown個別要素の装飾 */
+.h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 36px 0 16px 0;
+  padding-left: 12px;
+  border-left: 4px solid #bb0000;
+  color: #1a1a1a;
+  line-height: 1.4;
+}
+
+@media (min-width: 769px) {
+  .h2 {
+    font-size: 1.4rem;
+    margin: 44px 0 20px 0;
+    padding-left: 14px;
+  }
+}
+
+.h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin: 24px 0 12px 0;
+  color: #262626;
+}
+
+.paragraph {
+  color: #374151;
+  line-height: 1.85;
+  margin-bottom: 18px;
+  font-size: 0.95rem;
+}
+
+@media (min-width: 769px) {
+  .paragraph {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+}
+
+.list {
+  margin: 16px 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.listItem {
+  display: flex;
+  align-items: flex-start;
+  color: #374151;
+  line-height: 1.7;
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+}
+
+.bullet {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #bb0000;
+  margin-top: 9px;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+.strong {
+  font-weight: 700;
+  color: #111827;
+  background-color: #fef2f2;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.hr {
+  margin: 36px 0;
+  border: none;
+  border-top: 1px dashed #e5e7eb;
+}
+
+.link {
+  color: #bb0000;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.link:hover {
+  color: #990000;
+}

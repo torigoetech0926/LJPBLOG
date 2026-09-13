@@ -1,0 +1,257 @@
+/* メインコンテナ（中央配置・読みやすい幅設定） */
+.container {
+  width: 100%;
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 20px 16px 60px;
+  color: #242424;
+  line-height: 1.8;
+  word-break: break-word;
+}
+
+@media (min-width: 769px) {
+  .container {
+    padding: 40px 24px 80px;
+  }
+}
+
+/* ヘッダーエリア */
+.header {
+  margin-bottom: 24px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+@media (min-width: 769px) {
+  .header {
+    margin-bottom: 32px;
+    padding-bottom: 24px;
+  }
+}
+
+/* テーマ・タグ */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.tag {
+  background-color: #f3f4f6;
+  color: #4b5563;
+  font-size: 0.8rem;
+  padding: 4px 10px;
+  border-radius: 9999px;
+  font-weight: 500;
+}
+
+/* 記事タイトル */
+.title {
+  font-size: 1.4rem;
+  font-weight: 800;
+  line-height: 1.4;
+  margin: 0 0 12px 0;
+  color: #1a1a1a;
+}
+
+@media (min-width: 769px) {
+  .title {
+    font-size: 2rem;
+    line-height: 1.35;
+  }
+}
+
+/* 原題 */
+.originalTitle {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin: 0 0 16px 0;
+  font-style: italic;
+  line-height: 1.5;
+}
+
+/* メタ情報（日付・出所・ライセンス） */
+.metaMeta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-size: 0.8rem;
+  color: #6b7280;
+  align-items: center;
+}
+
+@media (min-width: 769px) {
+  .metaMeta {
+    gap: 16px;
+    font-size: 0.875rem;
+  }
+}
+
+/* 出所（動的リンク） */
+.sourceLink {
+  color: #bb0000;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.sourceLink:hover {
+  color: #990000;
+}
+
+/* メイン（アイキャッチ）画像 */
+.mainImageWrapper {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  max-height: 400px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 28px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  background-color: #f3f4f6;
+}
+
+.mainImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Markdown本文のスタイリング */
+.articleBody {
+  font-size: 1rem;
+  line-height: 1.85;
+  color: #272727;
+}
+
+@media (min-width: 769px) {
+  .articleBody {
+    font-size: 1.05rem;
+  }
+}
+
+/* H2 見出し */
+.articleBody h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 36px 0 16px 0;
+  padding-left: 12px;
+  border-left: 4px solid #bb0000;
+  color: #1a1a1a;
+  line-height: 1.4;
+}
+
+@media (min-width: 769px) {
+  .articleBody h2 {
+    font-size: 1.45rem;
+    margin: 48px 0 20px 0;
+    padding-left: 14px;
+  }
+}
+
+/* H3 見出し */
+.articleBody h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 28px 0 12px 0;
+  color: #262626;
+}
+
+@media (min-width: 769px) {
+  .articleBody h3 {
+    font-size: 1.2rem;
+    margin: 36px 0 16px 0;
+  }
+}
+
+/* 段落 */
+.articleBody p {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 769px) {
+  .articleBody p {
+    margin-bottom: 24px;
+  }
+}
+
+/* リスト表示 */
+.articleBody ul,
+.articleBody ol {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.articleBody li {
+  margin-bottom: 8px;
+}
+
+/* 区切り線（---） */
+.articleBody hr {
+  border: 0;
+  border-top: 1px dashed #d1d5db;
+  margin: 36px 0;
+}
+
+@media (min-width: 769px) {
+  .articleBody hr {
+    margin: 48px 0;
+  }
+}
+
+/* 本文内のリンク */
+.articleBody a {
+  color: #bb0000;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.articleBody a:hover {
+  color: #990000;
+}
+
+/* 引用・注釈ブロック */
+.articleBody blockquote {
+  margin: 20px 0;
+  padding: 14px 16px;
+  background-color: #f9fafb;
+  border-left: 4px solid #9ca3af;
+  color: #4b5563;
+  border-radius: 0 8px 8px 0;
+  font-size: 0.95rem;
+}
+
+/* 画像（本文内） */
+.articleBody img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+/* 記事下部のアクション */
+.backNav {
+  margin-top: 48px;
+  padding-top: 24px;
+  border-top: 1px solid #e5e7eb;
+  text-align: center;
+}
+
+.backButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 24px;
+  background-color: #f3f4f6;
+  color: #374151;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  border-radius: 9999px;
+  transition: all 0.2s ease;
+}
+
+.backButton:hover {
+  background-color: #e5e7eb;
+  color: #111827;
+}
