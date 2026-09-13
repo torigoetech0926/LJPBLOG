@@ -2,9 +2,17 @@
 import React from "react";
 import Link from "next/link";
 import ReactMarkdown from "react-markdown";
-import { getArticleData } from "./posts";
+import { getArticleData, getAllArticleSlugs } from "./posts";
 import styles from "@/app/_css/article.module.css";
 import ArticleImage from "@/app/_parts/ArticleImage";
+
+// SSG（Static Export）用にすべての記事 slug を事前に取得して Next.js に教える
+export async function generateStaticParams() {
+  const articles = await getAllArticleSlugs();
+  return articles.map((article) => ({
+    slug: article.slug,
+  }));
+}
 
 export default async function ArticlePage({
   params,

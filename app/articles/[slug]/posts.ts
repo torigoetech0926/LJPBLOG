@@ -40,3 +40,23 @@ export async function getArticleData(slug: string): Promise<ArticleData> {
     content,
   };
 }
+
+// 記事が存在するディレクトリのパス
+const postsDirectory = path.join(process.cwd(), "./content/article");
+
+/**
+ * 全記事の slug 一覧を取得する関数
+ */
+export function getAllArticleSlugs() {
+  if (!fs.existsSync(postsDirectory)) {
+    return [];
+  }
+
+  const fileNames = fs.readdirSync(postsDirectory);
+  
+  return fileNames
+    .filter((fileName) => fileName.endsWith(".md"))
+    .map((fileName) => ({
+      slug: fileName.replace(/\.md$/, ""),
+    }));
+}
