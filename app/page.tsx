@@ -1,114 +1,25 @@
 // app/page.tsx
-import React from "react";
-import Link from "next/link";
+import React, { Suspense } from "react";
 import { getSortedArticlesData } from "./posts";
 import styles from "./_css/mainPage.module.css";
-import ArticleImage from "./_parts/ArticleImage";
+import CategoryTabs from "./_parts/CategoryTabs";
 import Sidebar from "./_parts/Sidebar";
+import PaginatedArticleList from "./_parts/PaginatedArticleList";
 
-// 1ページあたりの表示件数を設定
-const ITEMS_PER_PAGE = 18;
-
-interface PageProps {
-  searchParams: Promise<{ page?: string }> | { page?: string };
-}
-
-export default async function ArticlesPage({ searchParams }: PageProps) {
-  // Next.js 15以降の非同期 searchParams に対応
-  const resolvedSearchParams = await searchParams;
-  const currentPage = Number(resolvedSearchParams?.page) || 1;
-
+export default async function ArticlesPage() {
   const articles = await getSortedArticlesData();
-  const totalArticles = articles.length;
-  
-  // 総ページ数の計算
-  const totalPages = Math.ceil(totalArticles / ITEMS_PER_PAGE);
-
-  // 現在のページに表示する記事を抽出
-  const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
-  const paginatedArticles = articles.slice(startIndex, startIndex + ITEMS_PER_PAGE);
 
   return (
     <main className={styles.mainContainer}>
       <section className={styles.articlesSection}>
         {/* スマホ対応カテゴリー横スクロールタブ */}
+        <CategoryTabs current="すべて" />
 
         <h1 className={styles.title}>記事一覧</h1>
 
-        {paginatedArticles.length === 0 ? (
-          <p className={styles.noArticles}>記事が見つかりませんでした。</p>
-        ) : (
-          <>
-            <ul className={styles.articleList}>
-              {paginatedArticles.map(({ slug, title, date, imageURL }) => (
-                <li key={slug} className={styles.articleItem}>
-                  <Link
-                    href={`/articles/${slug}`}
-                    className={styles.articleCardLink}
-                  >
-                    <div className={styles.imageWrapper}>
-                      <ArticleImage
-                        src={imageURL}
-                        alt={title}
-                        className={styles.articleImage}
-                      />
-                    </div>
-
-                    <div className={styles.cardBody}>
-                      <h2 className={styles.articleTitle}>{title}</h2>
-                      {date && (
-                        <time className={styles.articleDate}>
-                          <i className="fa-regular fa-calendar"></i>
-                          {date}
-                        </time>
-                      )}
-                    </div>
-                  </Link>
-                </li>
-              ))}
-            </ul>
-
-            {/* ページネーション UI */}
-            {totalPages > 1 && (
-              <nav className={styles.pagination} aria-label="ページ送り">
-                {/* 前へボタン */}
-                {currentPage > 1 && (
-                  <Link
-                    href={`/?page=${currentPage - 1}`}
-                    className={styles.paginationLink}
-                  >
-                    &laquo; 前へ
-                  </Link>
-                )}
-
-                {/* ページ番号一覧 */}
-                <div className={styles.pageNumbers}>
-                  {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
-                    <Link
-                      key={page}
-                      href={`/?page=${page}`}
-                      className={`${styles.pageNumber} ${
-                        page === currentPage ? styles.activePage : ""
-                      }`}
-                    >
-                      {page}
-                    </Link>
-                  ))}
-                </div>
-
-                {/* 次へボタン */}
-                {currentPage < totalPages && (
-                  <Link
-                    href={`/?page=${currentPage + 1}`}
-                    className={styles.paginationLink}
-                  >
-                    次へ &raquo;
-                  </Link>
-                )}
-              </nav>
-            )}
-          </>
-        )}
+        <Suspense fallback={<p className={styles.noArticles}>読み込み中...</p>}>
+          <PaginatedArticleList articles={articles} basePath="" />
+        </Suspense>
       </section>
 
       {/* サイドバー（PC時は右側、スマホ時は記事下部に表示） */}
