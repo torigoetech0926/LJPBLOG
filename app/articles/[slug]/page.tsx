@@ -1,10 +1,29 @@
-// app/articles/[slug]/page.tsx
 import React from "react";
 import Link from "next/link";
+import type { Metadata } from "next";
 import ReactMarkdown from "react-markdown";
 import { getArticleData, getAllArticleSlugs } from "./posts";
 import styles from "@/app/_css/article.module.css";
 import ArticleImage from "@/app/_parts/ArticleImage";
+
+// ▼▼▼ ここだけ書き換えてください ▼▼▼
+const SITE_URL = "https://torigoetech0926.github.io/LJPBLOG/"; // 例: https://myblog.github.io/myrepo
+const SITE_NAME = "LJPBLOG";
+// ▲▲▲
+
+const DEFAULT_OGP_IMAGE = `${SITE_URL}/default.jpg`;
+
+// 本文（マークダウン）からOGP用の説明文を生成
+function createDescription(content: string, maxLength = 120): string {
+  const plain = content
+    .replace(/```[\s\S]*?```/g, "")
+    .replace(/!\[[^\]]*\]\([^)]*\)/g, "")
+    .replace(/\[([^\]]*)\]\([^)]*\)/g, "$1")
+    .replace(/[#>*`~\-|]/g, "")
+    .replace(/\s+/g, " ")
+    .trim();
+  return plain.length > maxLength ? `${plain.slice(0, maxLength)}…` : plain;
+}
 
 // SSG（Static Export）用にすべての記事 slug を事前に取得して Next.js に教える
 export async function generateStaticParams() {
@@ -12,6 +31,43 @@ export async function generateStaticParams() {
   return articles.map((article) => ({
     slug: article.slug,
   }));
+}
+
+// X（Twitter）やSNSシェア用のOGPメタデータをビルド時に生成
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const article = await getArticleData(slug);
+
+  const title = article.title || SITE_NAME;
+  const description = createDescription(article.content ?? "");
+  const image = article.image || DEFAULT_OGP_IMAGE;
+  const url = `${SITE_URL}/articles/${slug}`;
+
+  return {
+    title,
+    description,
+    alternates: { canonical: url },
+    openGraph: {
+      title,
+      description,
+      url,
+      siteName: SITE_NAME,
+      images: [{ url: image, alt: title }],
+      locale: "ja_JP",
+      type: "article",
+      publishedTime: article.date || undefined,
+    },
+    twitter: {
+      card: "summary_large_image", // Xで画像を大きく表示するカード
+      title,
+      description,
+      images: [image],
+    },
+  };
 }
 
 export default async function ArticlePage({
@@ -71,7 +127,7 @@ export default async function ArticlePage({
         </div>
       </header>
 
-      {/* サムネイル画像（画像がない・読み込めない場合は自動的にデフォルト画像を表示） */}
+      {/* サムネイル画像 */}
       <div className={styles.mainImageWrapper}>
         <ArticleImage
           src={article.image}

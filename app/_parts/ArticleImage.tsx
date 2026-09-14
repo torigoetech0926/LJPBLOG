@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
-import defaultImage from '@/default.jpg';
+import defaultImage from '@/public/default.jpg';
 
 interface ArticleImageProps {
   src?: string;
