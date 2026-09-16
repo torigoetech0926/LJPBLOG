@@ -17,13 +17,13 @@ export interface ArticleData {
   content: string;
 }
 
-const articlesDirectory = path.join(process.cwd(), 'content/article');
+// パス解決をプロジェクトルートからの絶対パスに統一
+const postsDirectory = path.resolve(process.cwd(), 'content/article');
 
 export async function getArticleData(slug: string): Promise<ArticleData> {
-  const fullPath = path.join(articlesDirectory, `${slug}.md`);
+  const fullPath = path.join(postsDirectory, `${slug}.md`);
   const fileContents = fs.readFileSync(fullPath, 'utf8');
 
-  // matter で Frontmatter と 本文 (content) を分離
   const { data, content } = matter(fileContents);
 
   return {
@@ -32,7 +32,7 @@ export async function getArticleData(slug: string): Promise<ArticleData> {
     original_title: data.original_title as string,
     author: data.author as string,
     source_blog: data.source_blog as string,
-    source_url: data.source_url as string, // 動的なURLを取得
+    source_url: data.source_url as string,
     date: data.date ? String(data.date) : '',
     license: data.license as string,
     themes: data.themes as string[],
@@ -41,22 +41,26 @@ export async function getArticleData(slug: string): Promise<ArticleData> {
   };
 }
 
-// 記事が存在するディレクトリのパス
-const postsDirectory = path.join(process.cwd(), "./content/article");
-
 /**
  * 全記事の slug 一覧を取得する関数
  */
 export function getAllArticleSlugs() {
+  console.log('[DEBUG] Target postsDirectory:', postsDirectory);
+
   if (!fs.existsSync(postsDirectory)) {
+    console.error('[ERROR] Directory does not exist:', postsDirectory);
     return [];
   }
 
   const fileNames = fs.readdirSync(postsDirectory);
+  console.log('[DEBUG] Found files:', fileNames);
   
-  return fileNames
-    .filter((fileName) => fileName.endsWith(".md"))
+  const slugs = fileNames
+    .filter((fileName) => fileName.endsWith('.md'))
     .map((fileName) => ({
-      slug: fileName.replace(/\.md$/, ""),
+      slug: fileName.replace(/\.md$/, ''),
     }));
+
+  console.log('[DEBUG] Generated slugs count:', slugs.length);
+  return slugs;
 }
