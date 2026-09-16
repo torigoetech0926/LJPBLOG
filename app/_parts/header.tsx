@@ -49,6 +49,11 @@ const Header = () => {
               経済
             </Link>
           </li>
+          <li>
+            <Link href="/other" className={style.navLink}>
+              その他
+            </Link>
+          </li>
         </ul>
 
         {/* スマホ用ハンバーガーボタン */}

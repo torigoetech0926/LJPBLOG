@@ -12,6 +12,7 @@ const CATEGORIES = [
   { label: "社会", href: "/society" },
   { label: "政治", href: "/politics" },
   { label: "経済", href: "/economy" },
+  { label: "その他", href: "/other"}
 ];
 
 export default function Sidebar({ currentCategory }: SidebarProps) {
