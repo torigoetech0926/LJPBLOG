@@ -9,14 +9,14 @@ published: 2026-09-14
 license: "CC BY 4.0"
 themes: ["テクノロジー", "社会"]
 tags: ["テクノロジー", "社会"]
-image: ""
+image: "https://blogsmedia.lse.ac.uk/blogs.dir/28/files/2026/09/social-media-phone-teenagers-featured.jpg"
 ---
 
 ## キーワード
- - **ソーシャルメディア規制**: 子どものネット利用を制限する動きが欧州や世界中で高まる中、アクセスの禁止ではなくデジタル環境そのものの規律を求める議論がなされています。
+ - **EU Kids Online**: ヨーロッパにおける子どものインターネット利用やリスクを調査する国際的な研究ネットワーク。
 
 ## 本文
- 子どもたちのソーシャルメディアへのアクセスを制限すべきだという声が、ヨーロッパ全域および世界中で高まっています。しかし、子どもたちが入り込むデジタル環境そのものを規制する方が、私たちにとってより良い解決策なのでしょうか。
+ ヨーロッパや世界中で、子どものソーシャルメディアへのアクセスを制限すべきだという声が高まっています。しかし、子どもたちが利用するデジタル環境そのものを規制する方が、より効果的な対策となるのではないでしょうか。
 
 ---
 出典: "Protecting children online should mean redesigning platforms, not banning access" by Blog Team, originally published on LSE Blogs (https://blogs.lse.ac.uk/europpblog/2026/09/14/eu-kids-online-safety-2026/), licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
