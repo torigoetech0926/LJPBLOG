@@ -9,8 +9,8 @@ published: 2026-08-26
 license: "CC BY 4.0"
 themes: ["AI", "テクノロジー"]
 tags: ["AI", "テクノロジー"]
-image: "https://blogsmedia.lse.ac.uk/blogs.dir/58/files/2026/08/jamesfisher-e1787670247554.png"
-image_fallbacks: ["https://blogsmedia.lse.ac.uk/blogs.dir/58/files/2026/08/wehearyou-1000x668.jpg", "https://blogsmedia.lse.ac.uk/blogs.dir/58/files/2026/08/wehearyou-300x200.jpg", "https://blogsmedia.lse.ac.uk/blogs.dir/58/files/2026/08/wehearyou-768x513.jpg", "https://blogsmedia.lse.ac.uk/blogs.dir/58/files/2026/08/wehearyou-150x100.jpg", "https://blogsmedia.lse.ac.uk/blogs.dir/58/files/2026/08/wehearyou.jpg"]
+image: "https://secure.gravatar.com/avatar/2edf3d20e9a1db57dc56412e6a1d0bd7d8155f5abfae8fe6fe00fe3acab40c2e?s=96&d=mm&r=g"
+image_fallbacks: ["https://blogsmedia.lse.ac.uk/blogs.dir/58/files/2026/08/wehearyou.jpg", "https://blogsmedia.lse.ac.uk/blogs.dir/58/files/2019/09/Single-payer-featured.jpg", "https://blogsmedia.lse.ac.uk/blogs.dir/58/files/2024/01/Toxic-Waste-pollution-747x420-1.jpg", "https://blogsmedia.lse.ac.uk/blogs.dir/58/files/2015/04/Commission-meeting-featured.jpg", "https://blogs.lse.ac.uk/usappblog/wp-content/themes/lse/dist/images/post-banner.jpg"]
 ---
 
 ## キーワード
