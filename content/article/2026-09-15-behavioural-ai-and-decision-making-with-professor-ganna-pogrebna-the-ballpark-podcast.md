@@ -9,8 +9,8 @@ published: 2026-09-15
 license: "CC BY 4.0"
 themes: ["AI", "テクノロジー"]
 tags: ["AI", "テクノロジー"]
-image: "https://blogsmedia.lse.ac.uk/blogs.dir/58/files/2016/03/BALLPARK_SocMedBox-Transp-400x400.png"
-image_fallbacks: ["https://blogsmedia.lse.ac.uk/blogs.dir/58/files/2016/03/BALLPARK_SocMedBox-Transp.png", "https://blogsmedia.lse.ac.uk/blogs.dir/58/files/2016/03/BALLPARK_SocMedBox-Transp-150x150.png", "https://blogsmedia.lse.ac.uk/blogs.dir/58/files/2016/03/BALLPARK_SocMedBox-Transp-300x300.png", "https://blogsmedia.lse.ac.uk/blogs.dir/58/files/2016/03/BALLPARK_SocMedBox-Transp-66x66.png"]
+image: "https://secure.gravatar.com/avatar/b4bab5b65fba548c35de43ee819fca847ec611c094a4aa2f31e2eb153788c675?s=96&d=mm&r=g"
+image_fallbacks: ["https://blogsmedia.lse.ac.uk/blogs.dir/58/files/2026/09/AI-head-lines-unsplash.jpg", "https://blogsmedia.lse.ac.uk/blogs.dir/58/files/2025/04/Farm-cultivation-Flickr-747x420-1.png", "https://blogsmedia.lse.ac.uk/blogs.dir/58/files/2017/08/Tali-Mendelberg-Extra-Innings-Featured.jpg", "https://blogsmedia.lse.ac.uk/blogs.dir/58/files/2014/03/Trade-2-featured.jpg", "https://blogsmedia.lse.ac.uk/blogs.dir/58/files/2024/10/Facebook-747x420.png"]
 ---
 
 ## キーワード
