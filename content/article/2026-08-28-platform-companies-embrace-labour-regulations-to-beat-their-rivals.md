@@ -9,8 +9,8 @@ published: 2026-08-28
 license: "CC BY 4.0"
 themes: ["テクノロジー", "経済"]
 tags: ["テクノロジー", "経済"]
-image: "https://blogsmedia.lse.ac.uk/blogs.dir/58/files/2026/08/Kenjiro-996x750.jpg"
-image_fallbacks: ["https://blogsmedia.lse.ac.uk/blogs.dir/58/files/2026/08/Kenjiro-300x226.jpg", "https://blogsmedia.lse.ac.uk/blogs.dir/58/files/2026/08/Kenjiro-768x578.jpg", "https://blogsmedia.lse.ac.uk/blogs.dir/58/files/2026/08/Kenjiro-133x100.jpg", "https://blogsmedia.lse.ac.uk/blogs.dir/58/files/2026/08/Kenjiro.jpg"]
+image: "https://secure.gravatar.com/avatar/2edf3d20e9a1db57dc56412e6a1d0bd7d8155f5abfae8fe6fe00fe3acab40c2e?s=96&d=mm&r=g"
+image_fallbacks: ["https://blogsmedia.lse.ac.uk/blogs.dir/58/files/2026/08/Kenjiro.jpg"]
 ---
 
 ## キーワード
