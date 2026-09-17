@@ -9,8 +9,8 @@ published: 2026-09-14
 license: "CC BY 4.0"
 themes: ["経済"]
 tags: ["経済"]
-image: "https://blogsmedia.lse.ac.uk/blogs.dir/58/files/2026/09/Manova-Fig-1-142x100.png"
-image_fallbacks: ["https://blogsmedia.lse.ac.uk/blogs.dir/58/files/2026/09/Tariff-confusion-text-14-9-26-300x150.png", "https://blogsmedia.lse.ac.uk/blogs.dir/58/files/2026/09/Tariff-confusion-text-14-9-26-200x100.png", "https://blogsmedia.lse.ac.uk/blogs.dir/58/files/2026/09/Manova-Fig-1-1000x704.png", "https://blogsmedia.lse.ac.uk/blogs.dir/58/files/2026/09/Tariff-confusion-text-14-9-26.png", "https://blogsmedia.lse.ac.uk/blogs.dir/58/files/2026/09/Manova-Fig-1-300x211.png", "https://blogsmedia.lse.ac.uk/blogs.dir/58/files/2026/09/Manova-Fig-1-768x541.png", "https://blogsmedia.lse.ac.uk/blogs.dir/58/files/2026/09/Manova-Fig-1-1536x1081.png", "https://blogsmedia.lse.ac.uk/blogs.dir/58/files/2026/09/Manova-Fig-1-2048x1442.png"]
+image: "https://secure.gravatar.com/avatar/b4bab5b65fba548c35de43ee819fca847ec611c094a4aa2f31e2eb153788c675?s=96&d=mm&r=g"
+image_fallbacks: ["https://blogsmedia.lse.ac.uk/blogs.dir/58/files/2026/09/Trade-ship-unsplash.jpg", "https://blogsmedia.lse.ac.uk/blogs.dir/58/files/2014/11/Job-ad-featured.jpg", "https://blogsmedia.lse.ac.uk/blogs.dir/58/files/2016/07/meritocracy.jpg", "https://blogsmedia.lse.ac.uk/blogs.dir/58/files/2026/08/Trump-UK-trade-flickr-2000x1250-1.jpg", "https://blogsmedia.lse.ac.uk/blogs.dir/58/files/2021/06/Crescenzi-FDI-featured.jpg"]
 ---
 
 ## キーワード
