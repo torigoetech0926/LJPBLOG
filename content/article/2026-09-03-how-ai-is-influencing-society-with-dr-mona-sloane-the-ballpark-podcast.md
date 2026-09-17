@@ -9,8 +9,8 @@ published: 2026-09-03
 license: "CC BY 4.0"
 themes: ["AI", "テクノロジー"]
 tags: ["AI", "テクノロジー"]
-image: "https://blogsmedia.lse.ac.uk/blogs.dir/58/files/2016/03/BALLPARK_SocMedBox-Transp-400x400.png"
-image_fallbacks: ["https://blogsmedia.lse.ac.uk/blogs.dir/58/files/2016/03/BALLPARK_SocMedBox-Transp.png", "https://blogsmedia.lse.ac.uk/blogs.dir/58/files/2016/03/BALLPARK_SocMedBox-Transp-150x150.png", "https://blogsmedia.lse.ac.uk/blogs.dir/58/files/2016/03/BALLPARK_SocMedBox-Transp-300x300.png", "https://blogsmedia.lse.ac.uk/blogs.dir/58/files/2016/03/BALLPARK_SocMedBox-Transp-66x66.png"]
+image: "https://secure.gravatar.com/avatar/b4bab5b65fba548c35de43ee819fca847ec611c094a4aa2f31e2eb153788c675?s=96&d=mm&r=g"
+image_fallbacks: ["https://blogsmedia.lse.ac.uk/blogs.dir/58/files/2026/09/Society-AI-Unsplash-2000x1250-1.jpg", "https://blogsmedia.lse.ac.uk/blogs.dir/58/files/2025/09/Digital-law-747x420-1.jpg", "https://blogsmedia.lse.ac.uk/blogs.dir/58/files/2025/10/Digital-writing-hand-unsplash-747x420-1.jpg", "https://blogsmedia.lse.ac.uk/blogs.dir/58/files/2025/06/AI-hands-unsplash-747x420-1.png", "https://blogsmedia.lse.ac.uk/blogs.dir/58/files/2025/10/Robot-bench-747x420-1.jpg"]
 ---
 
 ## キーワード
