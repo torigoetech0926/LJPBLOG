@@ -9,8 +9,8 @@ published: 2026-09-07
 license: "CC BY 4.0"
 themes: ["経済", "社会"]
 tags: ["経済", "社会"]
-image: "https://blogsmedia.lse.ac.uk/blogs.dir/58/files/2026/09/Clement-Fig-2-196x100.png"
-image_fallbacks: ["https://blogsmedia.lse.ac.uk/blogs.dir/58/files/2026/09/Texas-roads-text-7-9-26-300x150.png", "https://blogsmedia.lse.ac.uk/blogs.dir/58/files/2026/09/Texas-roads-text-7-9-26-200x100.png", "https://blogsmedia.lse.ac.uk/blogs.dir/58/files/2026/09/Clement-Fig-1.png", "https://blogsmedia.lse.ac.uk/blogs.dir/58/files/2026/09/Clement-Fig-2.png", "https://blogsmedia.lse.ac.uk/blogs.dir/58/files/2026/09/Texas-roads-text-7-9-26.png", "https://blogsmedia.lse.ac.uk/blogs.dir/58/files/2026/09/Clement-Fig-1-300x153.png", "https://blogsmedia.lse.ac.uk/blogs.dir/58/files/2026/09/Clement-Fig-1-196x100.png", "https://blogsmedia.lse.ac.uk/blogs.dir/58/files/2026/09/Clement-Fig-2-300x153.png"]
+image: "https://secure.gravatar.com/avatar/b4bab5b65fba548c35de43ee819fca847ec611c094a4aa2f31e2eb153788c675?s=96&d=mm&r=g"
+image_fallbacks: ["https://blogsmedia.lse.ac.uk/blogs.dir/58/files/2026/09/Texas-highway-unsplash-2000x1250-1.jpg", "https://blogsmedia.lse.ac.uk/blogs.dir/58/files/2016/11/ambrosiusfeaturedreal.jpg", "https://blogsmedia.lse.ac.uk/blogs.dir/58/files/2014/07/Tax-featured.jpg", "https://blogsmedia.lse.ac.uk/blogs.dir/58/files/2017/12/Small-town-hall-featured.jpg", "https://blogsmedia.lse.ac.uk/blogs.dir/58/files/2024/05/Finance-buildings-747x420.jpg"]
 ---
 
 ## キーワード
