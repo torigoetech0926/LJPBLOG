@@ -9,8 +9,8 @@ published: 2026-09-15
 license: "CC BY 4.0"
 themes: ["AI", "社会"]
 tags: ["AI", "社会"]
-image: "https://blogsmedia.lse.ac.uk/blogs.dir/30/files/2026/09/Copy-of-Copy-of-25_0434-Cultures-of-Sustainable-Peace-25-1024x576.png"
-image_fallbacks: ["https://blogsmedia.lse.ac.uk/blogs.dir/30/files/2026/09/Copy-of-Copy-of-25_0434-Cultures-of-Sustainable-Peace-25-300x169.png", "https://blogsmedia.lse.ac.uk/blogs.dir/30/files/2026/09/Copy-of-Copy-of-25_0434-Cultures-of-Sustainable-Peace-25-768x432.png", "https://blogsmedia.lse.ac.uk/blogs.dir/30/files/2026/09/Copy-of-Copy-of-25_0434-Cultures-of-Sustainable-Peace-25-178x100.png", "https://blogsmedia.lse.ac.uk/blogs.dir/30/files/2026/09/Copy-of-Copy-of-25_0434-Cultures-of-Sustainable-Peace-25.png"]
+image: "https://secure.gravatar.com/avatar/49376ed4c9294c70f1a617f9c0c2b0dee744a8d699f7f9f42794caa26a86daef?s=96&d=mm&r=g"
+image_fallbacks: ["https://blogsmedia.lse.ac.uk/blogs.dir/30/files/2026/09/small-group-network-bxiOjnbjRM0-unsplash.747.jpg", "https://blogsmedia.lse.ac.uk/blogs.dir/30/files/2017/08/Transcribing-for-Social-Research-Image-1.jpg", "https://blogsmedia.lse.ac.uk/blogs.dir/30/files/2026/04/YutongLiu-DigitDigitalNomads-Across-Time-feature.png", "https://blogsmedia.lse.ac.uk/blogs.dir/30/files/2024/01/jigsaw-puzzle-brain_feature.jpg", "https://blogsmedia.lse.ac.uk/blogs.dir/30/files/2020/10/Critical-Affect-image.png"]
 ---
 
 ## キーワード
