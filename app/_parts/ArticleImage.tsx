@@ -11,7 +11,7 @@ interface ArticleImageProps {
   className?: string;
 }
 
-// ── basePath 対応(今回の修正核心) ──────────────────────────────────────
+// ── basePath 対応 ──────────────────────────────────────────────────────
 // GitHub Pages では next.config.ts の basePath「/LJPBLOG」配下で公開される。
 // frontmatter の「/images/article/xxx.jpg」のようなルート相対パスを <img src>
 // にそのまま渡すと「https://…github.io/images/article/xxx.jpg」(basePath 抜き)
@@ -88,12 +88,29 @@ export default function ArticleImage({
   const imgSrc =
     candidates[Math.min(idx, candidates.length - 1)] ?? defaultImage.src;
 
+  // ▼表示サイズ統一のための重要ポイント
+  // 記事画像はコンテナ(アスペクト比 16/9 の枠)に object-fit: cover で
+  // 「隙間なく・同じ比率で」敷き詰める。サイズがバラつかない。
+  // 一方デフォルトロゴ(1168x784)まで cover にすると拡大されて上下が
+  // 潰れて不自然に見えるため、contain(全体表示)+余白で中央に見せる。
+  const isDefault = imgSrc === defaultImage.src;
+
   return (
     <img
       src={imgSrc}
       alt={alt}
       loading="lazy"
+      decoding="async"
       className={className}
+      style={
+        isDefault
+          ? {
+              objectFit: 'contain', // ロゴは切り取らず全体を表示
+              padding: '16px', // 枠内で余白を持たせ、ロゴが窮屈にならないように
+              display: 'block',
+            }
+          : { objectFit: 'cover', display: 'block' } // 実画像は隙間なくトリミング表示
+      }
       // Referer 送信を止めることで、WordPress 系 CDN の
       // ホットリンク保護(空 Referer 許可パターン)での 403 を回避しやすくなる
       referrerPolicy="no-referrer"
