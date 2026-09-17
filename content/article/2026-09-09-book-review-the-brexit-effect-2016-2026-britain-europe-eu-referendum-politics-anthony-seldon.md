@@ -9,7 +9,7 @@ published: 2026-09-09
 license: "CC BY 4.0"
 themes: ["政治", "経済"]
 tags: ["政治", "経済"]
-image: "https://s0.wp.com/mshots/v1/https%3A%2F%2Fblogsmedia.lse.ac.uk%2Fblogs.dir%2F30%2Ffiles%2F2026%2F09%2Fshutterstock_1212929488.747.jpg?w=1200&h=630"
+image: "/images/article/2026-09-09-book-review-the-brexit-effect-2016-2026-britain-europe-eu-referendum-politics-anthony-seldon.jpg"
 image_fallbacks: ["https://blogsmedia.lse.ac.uk/blogs.dir/30/files/2026/09/Copy-of-Copy-of-25_0434-Cultures-of-Sustainable-Peace-23.png", "https://blogsmedia.lse.ac.uk/blogs.dir/30/files/2026/09/Copy-of-Copy-of-25_0434-Cultures-of-Sustainable-Peace-23-1024x576.png", "https://blogsmedia.lse.ac.uk/blogs.dir/30/files/2023/05/Brexit_747x420.jpg", "https://blogsmedia.lse.ac.uk/blogs.dir/30/files/2025/07/Execution_robespierre_saint_feature.jpg", "https://blogsmedia.lse.ac.uk/blogs.dir/30/files/2018/08/Europes-Brexit-image.jpg", "https://blogsmedia.lse.ac.uk/blogs.dir/30/files/2020/07/Reactionary-Democracy-Twitter-cover.png"]
 ---
 
