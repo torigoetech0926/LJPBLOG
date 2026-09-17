@@ -9,7 +9,7 @@ published: 2026-09-07
 license: "CC BY 4.0"
 themes: ["経済", "社会"]
 tags: ["経済", "社会"]
-image: "https://s0.wp.com/mshots/v1/https%3A%2F%2Fblogsmedia.lse.ac.uk%2Fblogs.dir%2F58%2Ffiles%2F2026%2F09%2FTexas-highway-unsplash-2000x1250-1.jpg?w=1200&h=630"
+image: "/images/article/2026-09-07-texas-roads-private-profit-traffic.jpg"
 image_fallbacks: ["https://blogsmedia.lse.ac.uk/blogs.dir/58/files/2026/09/Clement-Fig-1.png", "https://blogsmedia.lse.ac.uk/blogs.dir/58/files/2026/09/Clement-Fig-2.png", "https://blogsmedia.lse.ac.uk/blogs.dir/58/files/2026/09/Texas-roads-text-7-9-26.png", "https://blogsmedia.lse.ac.uk/blogs.dir/58/files/2016/11/ambrosiusfeaturedreal.jpg", "https://blogsmedia.lse.ac.uk/blogs.dir/58/files/2014/07/Tax-featured.jpg", "https://blogsmedia.lse.ac.uk/blogs.dir/58/files/2017/12/Small-town-hall-featured.jpg"]
 ---
 
