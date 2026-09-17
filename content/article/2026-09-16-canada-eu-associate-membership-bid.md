@@ -9,7 +9,7 @@ published: 2026-09-16
 license: "CC BY 4.0"
 themes: ["政治", "経済"]
 tags: ["政治", "経済"]
-image: "https://s0.wp.com/mshots/v1/https%3A%2F%2Fblogsmedia.lse.ac.uk%2Fblogs.dir%2F58%2Ffiles%2F2026%2F09%2FCarney-EU-2000x1250-1.jpg?w=1200&h=630"
+image: "/images/article/2026-09-16-canada-eu-associate-membership-bid.jpg"
 image_fallbacks: ["https://blogsmedia.lse.ac.uk/blogs.dir/58/files/2026/09/Mark-Carney-text-16-9-26.png", "https://blogsmedia.lse.ac.uk/blogs.dir/58/files/2018/05/jamaica_bauxite_stamp.jpg", "https://blogsmedia.lse.ac.uk/blogs.dir/58/files/2018/05/jamaica_bauxite_stamp-670x335.jpg", "https://blogsmedia.lse.ac.uk/blogs.dir/58/files/2016/03/Realpolitik-Image.jpg", "https://blogsmedia.lse.ac.uk/blogs.dir/58/files/2015/06/useuflageuroparlfeatured.jpg", "https://blogsmedia.lse.ac.uk/blogs.dir/58/files/2014/09/F22-Featured.jpg"]
 ---
 
