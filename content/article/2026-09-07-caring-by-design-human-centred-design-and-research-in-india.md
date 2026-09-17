@@ -9,8 +9,8 @@ published: 2026-09-07
 license: "CC BY 4.0"
 themes: ["社会"]
 tags: ["社会"]
-image: ""
-image_fallbacks: []
+image: "https://secure.gravatar.com/avatar/c5cec8d6341cc4f70eb84bbe8b867ab86f1a749465b951e98621b157ddd204a7?s=96&d=mm&r=g"
+image_fallbacks: ["https://blogs.lse.ac.uk/southasia/files/2014/07/City-Palace-of-Japuir.jpg", "https://blogsmedia.lse.ac.uk/blogs.dir/35/files/2026/04/Neha-Pic-80x90.jpg", "https://blogsmedia.lse.ac.uk/blogs.dir/35/files/2026/04/Neha-Pic-89x100.jpg", "https://blogsmedia.lse.ac.uk/blogs.dir/35/files/2020/01/cropped-lse-logo-blogs.jpg", "https://blogsmedia.lse.ac.uk/blogs.dir/35/files/2026/09/NEHA-BANNERPIC1.jpg", "https://blogsmedia.lse.ac.uk/blogs.dir/35/files/2026/04/Neha-Pic.jpg", "https://blogsmedia.lse.ac.uk/blogs.dir/35/files/2021/02/Bangladesh_1400x700_gold-silver-red-green.jpg", "https://blogsmedia.lse.ac.uk/blogs.dir/35/files/2026/03/Ruhi-BannerPic2.jpg", "https://blogsmedia.lse.ac.uk/blogs.dir/35/files/2022/02/RK_Banner.jpg", "https://blogsmedia.lse.ac.uk/blogs.dir/35/files/2022/11/oladimeji-odunsi-e-TuK4z2LhY-unsplash_1.jpg"]
 ---
 
 ## キーワード
