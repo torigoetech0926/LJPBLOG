@@ -44,7 +44,11 @@ export async function generateMetadata({
 
   const title = article.title || SITE_NAME;
   const description = createDescription(article.content ?? "");
-  const image = article.image || DEFAULT_OGP_IMAGE;
+  const image = article.image
+  ? /^https?:\/\//i.test(article.image)
+    ? article.image
+    : `${SITE_URL}${article.image.replace(/^\//, "")}`
+  : DEFAULT_OGP_IMAGE;
   const url = `${SITE_URL}/articles/${slug}`;
 
   return {
