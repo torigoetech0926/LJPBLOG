@@ -9,8 +9,8 @@ published: 2026-09-09
 license: "CC BY 4.0"
 themes: ["政治", "経済"]
 tags: ["政治", "経済"]
-image: "https://blogsmedia.lse.ac.uk/blogs.dir/30/files/2026/09/Copy-of-Copy-of-25_0434-Cultures-of-Sustainable-Peace-23-1024x576.png"
-image_fallbacks: ["https://blogsmedia.lse.ac.uk/blogs.dir/30/files/2026/09/Copy-of-Copy-of-25_0434-Cultures-of-Sustainable-Peace-23-300x169.png", "https://blogsmedia.lse.ac.uk/blogs.dir/30/files/2026/09/Copy-of-Copy-of-25_0434-Cultures-of-Sustainable-Peace-23-768x432.png", "https://blogsmedia.lse.ac.uk/blogs.dir/30/files/2026/09/Copy-of-Copy-of-25_0434-Cultures-of-Sustainable-Peace-23-178x100.png", "https://blogsmedia.lse.ac.uk/blogs.dir/30/files/2026/09/Copy-of-Copy-of-25_0434-Cultures-of-Sustainable-Peace-23.png"]
+image: "https://secure.gravatar.com/avatar/49376ed4c9294c70f1a617f9c0c2b0dee744a8d699f7f9f42794caa26a86daef?s=96&d=mm&r=g"
+image_fallbacks: ["https://blogsmedia.lse.ac.uk/blogs.dir/30/files/2026/09/shutterstock_1212929488.747.jpg", "https://blogsmedia.lse.ac.uk/blogs.dir/30/files/2023/05/Brexit_747x420.jpg", "https://blogsmedia.lse.ac.uk/blogs.dir/30/files/2025/07/Execution_robespierre_saint_feature.jpg", "https://blogsmedia.lse.ac.uk/blogs.dir/30/files/2018/08/Europes-Brexit-image.jpg", "https://blogsmedia.lse.ac.uk/blogs.dir/30/files/2020/07/Reactionary-Democracy-Twitter-cover.png"]
 ---
 
 ## キーワード
