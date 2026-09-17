@@ -9,7 +9,7 @@ published: 2026-09-08
 license: "CC BY 4.0"
 themes: ["社会"]
 tags: ["社会"]
-image: "https://s0.wp.com/mshots/v1/https%3A%2F%2Fblogsmedia.lse.ac.uk%2Fblogs.dir%2F30%2Ffiles%2F2026%2F09%2FEast-and-Southeast-Asian-Month-Heritage-Reading-List.747.png?w=1200&h=630"
+image: "/images/article/2026-09-08-thirteen-great-books-for-east-and-southeast-asian-heritage-month.jpg"
 image_fallbacks: ["https://blogsmedia.lse.ac.uk/blogs.dir/30/files/2026/09/Chinese-and-any-other-asian.jpg", "https://blogsmedia.lse.ac.uk/blogs.dir/30/files/2026/09/Chinese-and-any-other-asian-666x1024.jpg", "https://blogsmedia.lse.ac.uk/blogs.dir/30/files/2026/09/cats.jpg", "https://blogsmedia.lse.ac.uk/blogs.dir/30/files/2026/09/cats-712x1024.jpg", "https://blogsmedia.lse.ac.uk/blogs.dir/30/files/2026/09/A1aIawR4l9L._SL1500_.jpg", "https://blogsmedia.lse.ac.uk/blogs.dir/30/files/2026/09/A1aIawR4l9L._SL1500_-680x1024.jpg"]
 ---
 
