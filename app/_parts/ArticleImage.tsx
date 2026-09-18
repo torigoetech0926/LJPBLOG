@@ -88,11 +88,12 @@ export default function ArticleImage({
   const imgSrc =
     candidates[Math.min(idx, candidates.length - 1)] ?? defaultImage.src;
 
-  // ▼表示サイズ統一のための重要ポイント
-  // 記事画像はコンテナ(アスペクト比 16/9 の枠)に object-fit: cover で
-  // 「隙間なく・同じ比率で」敷き詰める。サイズがバラつかない。
-  // 一方デフォルトロゴ(1168x784)まで cover にすると拡大されて上下が
-  // 潰れて不自然に見えるため、contain(全体表示)+余白で中央に見せる。
+  // ▼表示サイズ統一のための重要ポイント(2026-09 強化版)
+  // 「どのようなサイズ・比率の画像が来ても、必ず親の16:9枠いっぱいに
+  //   収まる」ことをインラインスタイルで保証する(呼び出し側CSSに依存しない)。
+  //   実画像 → object-fit: cover で枠を隙間なく敷き詰める(はみ出し・縮みなし)。
+  //   デフォルトロゴ → contain + padding で全体を枠内に見せる。
+  //   ※ boxSizing: border-box により padding を含めて 100% に収まる。
   const isDefault = imgSrc === defaultImage.src;
 
   return (
@@ -105,11 +106,20 @@ export default function ArticleImage({
       style={
         isDefault
           ? {
+              width: '100%', // 枠いっぱいに広げる
+              height: '100%',
+              boxSizing: 'border-box', // padding を含めて 100% に収める
               objectFit: 'contain', // ロゴは切り取らず全体を表示
               padding: '16px', // 枠内で余白を持たせ、ロゴが窮屈にならないように
               display: 'block',
             }
-          : { objectFit: 'cover', display: 'block' } // 実画像は隙間なくトリミング表示
+          : {
+              width: '100%', // 枠いっぱいに広げる
+              height: '100%',
+              objectFit: 'cover', // 実画像は隙間なくトリミング表示
+              objectPosition: 'center',
+              display: 'block',
+            }
       }
       // Referer 送信を止めることで、WordPress 系 CDN の
       // ホットリンク保護(空 Referer 許可パターン)での 403 を回避しやすくなる

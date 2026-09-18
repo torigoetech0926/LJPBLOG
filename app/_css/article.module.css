@@ -100,10 +100,11 @@
 }
 
 /* メイン（アイキャッチ）画像 */
+/* ※ max-height を設けない: aspect-ratio(16/9) を唯一の尺寸基準にすることで、
+     どんなサイズの画像でも必ず同じ比率の枠に収まり、レイアウトが歪まない */
 .mainImageWrapper {
   width: 100%;
   aspect-ratio: 16 / 9;
-  max-height: 400px;
   border-radius: 10px;
   overflow: hidden;
   margin-bottom: 28px;
